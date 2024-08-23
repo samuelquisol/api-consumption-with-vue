@@ -1,12 +1,11 @@
 <template>
- <h1>DETALLES DE LA PELICULA ID {{ movieId }}</h1>
+    <h1>DETALLES DE LA PELICULA</h1>
+    <MovieDetails />
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import MovieDetails from "@/components/movies/DetailsMovie.vue";
 
-const route = useRoute()
-const movieId = route.params.id as string
 </script>
 
 <style lang="scss" scoped>
