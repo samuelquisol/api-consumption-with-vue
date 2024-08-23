@@ -1,5 +1,6 @@
 <template>
     <div class="card-movie">
+        
         <h3 class="title-movie">{{ props.title }}</h3>
 
         <img :src="props.poster" :alt="props.title">
@@ -11,8 +12,9 @@
         <p>
             <span>Tipo:</span>
             {{ props.type }}
-        </p>
-        <<router-link :to="{ name: 'movie-details', params: {id: props.id}}">Ver Detalles</router-link> 
+        </p>        
+        <br>
+        <router-link :to="{ name: 'movie-details', params: {id: props.id}}" style="text-decoration: none; color: #970BFF"><b>Ver Detalles →</b></router-link> 
     </div>
 </template>
 
